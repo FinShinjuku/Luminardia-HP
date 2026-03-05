@@ -29,7 +29,7 @@ export function Contact() {
             const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
             const subject = `【お問い合わせ】${companyName ? companyName + " " : ""}${name}様`;
             const body = `会社名: ${companyName || "未記入"}\nお名前: ${name}\nメール: ${email}\n電話番号: ${phone || "未記入"}\n\nお問い合わせ内容:\n${message}`;
-            window.location.href = `mailto:k.sekihara@luminordia.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = `mailto:k.kanbara@luminordia.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
           }}
           className="mt-8 space-y-6"
           aria-label="お問い合わせフォーム"

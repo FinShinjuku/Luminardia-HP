@@ -15,7 +15,7 @@ const companyData = [
   },
   {
     label: "連絡先",
-    value: "k.sekihara@luminordia.com",
+    value: "k.kanbara@luminordia.com",
     isEmail: true,
   },
 ];
