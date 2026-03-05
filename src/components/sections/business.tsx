@@ -1,6 +1,7 @@
 "use client";
 
-import { Monitor, Brain, Sprout, Wheat } from "lucide-react";
+import Link from "next/link";
+import { Monitor, Brain, Sprout, Wheat, ArrowRight } from "lucide-react";
 import { useIntersection } from "@/hooks/use-intersection";
 
 const services = [
@@ -27,6 +28,7 @@ const services = [
     title: "たばね - 農業DX SaaS",
     description:
       "農業生産者向けのロット管理・需要予測プラットフォーム。在庫管理と生産計画を最適化し、農協・取引先との連携をデジタル化。シンプルな操作性で現場の負担を軽減します。",
+    href: "/tabane",
   },
 ];
 
@@ -47,24 +49,46 @@ export function Business() {
         <div className="mt-2 h-1 w-12 bg-brand" />
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {services.map((service) => (
-            <article
-              key={service.title}
-              className="rounded-lg border border-border bg-white p-8 transition-shadow hover:shadow-md"
-            >
-              <service.icon
-                size={40}
-                className="text-brand"
-                strokeWidth={1.5}
-              />
-              <h3 className="mt-4 font-heading text-lg font-semibold text-text-primary">
-                {service.title}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-text-secondary">
-                {service.description}
-              </p>
-            </article>
-          ))}
+          {services.map((service) => {
+            const content = (
+              <>
+                <service.icon
+                  size={40}
+                  className="text-brand"
+                  strokeWidth={1.5}
+                />
+                <h3 className="mt-4 font-heading text-lg font-semibold text-text-primary">
+                  {service.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+                  {service.description}
+                </p>
+                {service.href && (
+                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand">
+                    詳しく見る
+                    <ArrowRight size={14} />
+                  </span>
+                )}
+              </>
+            );
+
+            return service.href ? (
+              <Link
+                key={service.title}
+                href={service.href}
+                className="rounded-lg border border-border bg-white p-8 transition-shadow hover:shadow-md"
+              >
+                {content}
+              </Link>
+            ) : (
+              <article
+                key={service.title}
+                className="rounded-lg border border-border bg-white p-8 transition-shadow hover:shadow-md"
+              >
+                {content}
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>
