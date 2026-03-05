@@ -3,16 +3,9 @@
 @theme {
   --color-brand: #E03020;
   --color-brand-dark: #C42A1C;
-  --color-dark: #0a1628;
-  --color-surface: #111827;
-  --color-light: #faf9f5;
-  --color-accent2: #6a9bcc;
-  --color-text-light: #f1f5f9;
-  --color-text-muted: #94a3b8;
-  --color-border-dark: #1e293b;
-
   --color-text-primary: #1A1A1A;
   --color-text-secondary: #666666;
+  --color-text-muted: #999999;
   --color-bg-primary: #FFFFFF;
   --color-bg-secondary: #F8F8F8;
   --color-border: #E5E5E5;
@@ -27,8 +20,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  color: var(--color-text-light);
-  background-color: var(--color-dark);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
 }
 
 h1, h2, h3, h4, h5, h6 {
