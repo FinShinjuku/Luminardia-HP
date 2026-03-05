@@ -26,7 +26,7 @@ const services = [
     icon: Wheat,
     title: "たばね - 農業DX SaaS",
     description:
-      "農業生産者向けのロット管理・需要予測プラットフォーム。在庫管理と生産計画を最適化し、農協・取引先との連携をデジタル化。シンプルな操作性で現場の負担を軽減します。",
+      "農業生産者向けのロット管理・需要予測プラットフォーム。在庫管理と生産計画を最適化し、農協・取引先との連携をデジタル化します。",
   },
 ];
 
@@ -34,7 +34,7 @@ export function Business() {
   const { ref, isVisible } = useIntersection();
 
   return (
-    <section id="business" className="py-20 md:py-28">
+    <section id="business" className="bg-light py-20 md:py-28">
       <div
         ref={ref}
         className={`mx-auto max-w-6xl px-6 transition-all duration-500 ${
@@ -50,13 +50,14 @@ export function Business() {
           {services.map((service) => (
             <article
               key={service.title}
-              className="rounded-lg border border-border bg-white p-8 transition-shadow hover:shadow-md"
+              className="group rounded-lg border border-border bg-white p-8 transition-all hover:border-brand"
             >
               <service.icon
                 size={40}
-                className="text-brand"
+                className="text-text-primary"
                 strokeWidth={1.5}
               />
+              <div className="mt-3 h-0.5 w-8 bg-brand opacity-0 transition-opacity group-hover:opacity-100" />
               <h3 className="mt-4 font-heading text-lg font-semibold text-text-primary">
                 {service.title}
               </h3>

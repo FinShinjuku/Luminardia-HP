@@ -11,7 +11,7 @@ const companyData = [
   },
   {
     label: "事業内容",
-    value: "IT戦略コンサルティング / AIによるシステム開発 / アグリテック",
+    value: "IT戦略コンサルティング / AIによるシステム開発 / アグリテック / たばね",
   },
 ];
 
@@ -19,7 +19,7 @@ export function CompanyInfo() {
   const { ref, isVisible } = useIntersection();
 
   return (
-    <section id="company" className="bg-bg-secondary py-20 md:py-28">
+    <section id="company" className="bg-light py-20 md:py-28">
       <div
         ref={ref}
         className={`mx-auto max-w-3xl px-6 transition-all duration-500 ${
