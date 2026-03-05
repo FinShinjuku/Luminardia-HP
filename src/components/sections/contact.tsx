@@ -19,7 +19,18 @@ export function Contact() {
         <div className="mt-2 h-1 w-12 bg-brand" />
 
         <form
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={(e) => {
+            e.preventDefault();
+            const form = e.currentTarget;
+            const companyName = (form.elements.namedItem("company-name") as HTMLInputElement).value;
+            const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+            const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+            const phone = (form.elements.namedItem("phone") as HTMLInputElement).value;
+            const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
+            const subject = `【お問い合わせ】${companyName ? companyName + " " : ""}${name}様`;
+            const body = `会社名: ${companyName || "未記入"}\nお名前: ${name}\nメール: ${email}\n電話番号: ${phone || "未記入"}\n\nお問い合わせ内容:\n${message}`;
+            window.location.href = `mailto:k.sekihara@luminordia.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          }}
           className="mt-8 space-y-6"
           aria-label="お問い合わせフォーム"
         >
@@ -101,14 +112,10 @@ export function Contact() {
           <div className="text-center">
             <button
               type="submit"
-              disabled
-              className="inline-flex items-center gap-2 rounded-md bg-brand px-8 py-3 text-sm font-medium text-white opacity-60 cursor-not-allowed"
+              className="inline-flex items-center gap-2 rounded-md bg-brand px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-dark"
             >
-              送信（準備中）
+              送信
             </button>
-            <p className="mt-2 text-xs text-text-muted">
-              送信機能は現在準備中です。お急ぎの方は直接ご連絡ください。
-            </p>
           </div>
         </form>
       </div>

@@ -13,6 +13,11 @@ const companyData = [
     label: "事業内容",
     value: "IT戦略コンサルティング / AIによるシステム開発 / アグリテック",
   },
+  {
+    label: "連絡先",
+    value: "k.sekihara@luminordia.com",
+    isEmail: true,
+  },
 ];
 
 export function CompanyInfo() {
@@ -40,7 +45,18 @@ export function CompanyInfo() {
               <dt className="w-32 shrink-0 text-sm font-medium text-text-primary">
                 {item.label}
               </dt>
-              <dd className="text-sm text-text-secondary">{item.value}</dd>
+              <dd className="text-sm text-text-secondary">
+                {"isEmail" in item && item.isEmail ? (
+                  <a
+                    href={`mailto:${item.value}`}
+                    className="transition-colors hover:text-brand"
+                  >
+                    {item.value}
+                  </a>
+                ) : (
+                  item.value
+                )}
+              </dd>
             </div>
           ))}
         </dl>
