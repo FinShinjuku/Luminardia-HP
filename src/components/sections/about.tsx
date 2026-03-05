@@ -24,13 +24,18 @@ export function About() {
             新たなビジネス価値を創造する企業です。
           </p>
           <p>
-            IT戦略コンサルティングにより、お客様のDX推進を支援し、
-            AIを活用したシステム開発で業務効率化と競争力強化を実現します。
-            さらに、アグリテック事業を通じて、農業のデジタル化と持続可能な食料生産に貢献します。
+            創業者は、金融機関向け基幹システム開発で培った堅牢な設計力と、
+            AWS
+            Japanでのクラウド技術革新の推進経験を併せ持ちます。この「信頼性」と「先進性」の両軸が、Luminardia.incのサービス品質の基盤です。
           </p>
           <p>
-            「テクノロジーで、未来を切り拓く」をミッションに、
-            変化の激しい時代において確かな技術力でお客様の事業成長をサポートしてまいります。
+            IT戦略コンサルティングによるDX推進支援、AIを活用したシステム開発、
+            そしてアグリテック事業を通じた農業のデジタル化と持続可能な食料生産への貢献
+            ——三つの事業領域で、お客様の成長を支えます。
+          </p>
+          <p className="mt-2 inline-flex items-center gap-2 border border-text-secondary/20 px-4 py-2 text-sm text-text-primary">
+            <span className="font-semibold">特定非営利活動法人 金融IT協会（FITA）</span>
+            <span className="text-text-secondary">個人会員</span>
           </p>
         </div>
       </div>
