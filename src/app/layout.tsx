@@ -17,14 +17,14 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Luminardia.inc | テクノロジーで、未来を切り拓く",
+  title: "Luminardia.inc | 金融の未来を、テクノロジーで再定義する",
   description:
-    "Luminardia.incは、IT戦略コンサルティング、AIによるシステム開発、アグリテック事業を通じて、テクノロジーで未来を切り拓く企業です。",
-  keywords: ["Luminardia", "IT戦略", "AIシステム開発", "アグリテック", "コンサルティング"],
+    "Luminardia.incは、金融基幹システム開発・AI・クラウドインフラの技術力で、ミッションクリティカルなシステムを構築するテクノロジー企業です。",
+  keywords: ["Luminardia", "金融基幹システム", "AIシステム開発", "AWS", "IT戦略コンサルティング", "アグリテック"],
   openGraph: {
-    title: "Luminardia.inc | テクノロジーで、未来を切り拓く",
+    title: "Luminardia.inc | 金融の未来を、テクノロジーで再定義する",
     description:
-      "IT戦略コンサルティング、AIによるシステム開発、アグリテック事業を展開。",
+      "金融基幹システム開発 × AI × クラウドインフラ。ミッションクリティカルなシステムを構築。",
     type: "website",
     locale: "ja_JP",
     siteName: "Luminardia.inc",
@@ -50,7 +50,7 @@ export default function RootLayout({
       addressCountry: "JP",
     },
     description:
-      "IT戦略コンサルティング、AIによるシステム開発、アグリテック事業を展開する企業です。",
+      "金融基幹システム開発・AI・クラウドインフラの技術力で、ミッションクリティカルなシステムを構築するテクノロジー企業です。",
   };
 
   return (

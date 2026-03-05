@@ -1,9 +1,9 @@
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-bg-secondary">
+    <footer className="border-t border-border-dark bg-dark">
       <div className="mx-auto max-w-6xl px-6 py-8">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <p className="font-heading text-lg font-semibold text-text-primary">
+          <p className="font-heading text-lg font-semibold text-text-light">
             Luminardia.inc
           </p>
           <address className="text-sm not-italic text-text-muted">

@@ -6,14 +6,14 @@ export function Contact() {
   const { ref, isVisible } = useIntersection();
 
   return (
-    <section id="contact" className="py-20 md:py-28">
+    <section id="contact" className="bg-surface py-20 md:py-28">
       <div
         ref={ref}
         className={`mx-auto max-w-2xl px-6 transition-all duration-500 ${
           isVisible ? "animate-fade-in-up" : "opacity-0"
         }`}
       >
-        <h2 className="font-heading text-2xl font-bold text-text-primary md:text-3xl">
+        <h2 className="font-heading text-2xl font-bold text-text-light md:text-3xl">
           Contact
         </h2>
         <div className="mt-2 h-1 w-12 bg-brand" />
@@ -27,20 +27,20 @@ export function Contact() {
             <div>
               <label
                 htmlFor="company-name"
-                className="block text-sm font-medium text-text-primary"
+                className="block text-sm font-medium text-text-light"
               >
                 会社名
               </label>
               <input
                 id="company-name"
                 type="text"
-                className="mt-1 w-full rounded-md border border-border bg-white px-4 py-2.5 text-sm text-text-primary outline-none transition-colors focus:border-brand"
+                className="mt-1 w-full rounded-md border border-border-dark bg-dark px-4 py-2.5 text-sm text-text-light outline-none transition-colors focus:border-brand"
               />
             </div>
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-text-primary"
+                className="block text-sm font-medium text-text-light"
               >
                 お名前 <span className="text-brand">*</span>
               </label>
@@ -48,7 +48,7 @@ export function Contact() {
                 id="name"
                 type="text"
                 required
-                className="mt-1 w-full rounded-md border border-border bg-white px-4 py-2.5 text-sm text-text-primary outline-none transition-colors focus:border-brand"
+                className="mt-1 w-full rounded-md border border-border-dark bg-dark px-4 py-2.5 text-sm text-text-light outline-none transition-colors focus:border-brand"
               />
             </div>
           </div>
@@ -57,7 +57,7 @@ export function Contact() {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-text-primary"
+                className="block text-sm font-medium text-text-light"
               >
                 メールアドレス <span className="text-brand">*</span>
               </label>
@@ -65,20 +65,20 @@ export function Contact() {
                 id="email"
                 type="email"
                 required
-                className="mt-1 w-full rounded-md border border-border bg-white px-4 py-2.5 text-sm text-text-primary outline-none transition-colors focus:border-brand"
+                className="mt-1 w-full rounded-md border border-border-dark bg-dark px-4 py-2.5 text-sm text-text-light outline-none transition-colors focus:border-brand"
               />
             </div>
             <div>
               <label
                 htmlFor="phone"
-                className="block text-sm font-medium text-text-primary"
+                className="block text-sm font-medium text-text-light"
               >
                 電話番号
               </label>
               <input
                 id="phone"
                 type="tel"
-                className="mt-1 w-full rounded-md border border-border bg-white px-4 py-2.5 text-sm text-text-primary outline-none transition-colors focus:border-brand"
+                className="mt-1 w-full rounded-md border border-border-dark bg-dark px-4 py-2.5 text-sm text-text-light outline-none transition-colors focus:border-brand"
               />
             </div>
           </div>
@@ -86,7 +86,7 @@ export function Contact() {
           <div>
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-text-primary"
+              className="block text-sm font-medium text-text-light"
             >
               お問い合わせ内容 <span className="text-brand">*</span>
             </label>
@@ -94,7 +94,7 @@ export function Contact() {
               id="message"
               rows={5}
               required
-              className="mt-1 w-full rounded-md border border-border bg-white px-4 py-2.5 text-sm text-text-primary outline-none transition-colors focus:border-brand"
+              className="mt-1 w-full rounded-md border border-border-dark bg-dark px-4 py-2.5 text-sm text-text-light outline-none transition-colors focus:border-brand"
             />
           </div>
 
