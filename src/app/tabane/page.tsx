@@ -146,6 +146,15 @@ export default function TabanePage() {
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-text-secondary md:text-xl">
               農家の最小入力で、注文・出荷・在庫がすべて繋がる。
             </p>
+            <a
+              href="https://agri-dx-manager.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 rounded-lg bg-brand px-8 py-3 font-heading text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+            >
+              デモを見る
+              <ExternalLink size={16} />
+            </a>
           </div>
         </section>
 
