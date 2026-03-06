@@ -8,7 +8,6 @@ const navLinks = [
   { href: "/#about", label: "会社紹介" },
   { href: "/#business", label: "事業内容" },
   { href: "/#company", label: "会社概要" },
-  { href: "/#contact", label: "お問い合わせ" },
 ];
 
 export function Header() {
@@ -52,9 +51,15 @@ export function Header() {
               {link.label}
             </a>
           ))}
+          <a
+            href="/#contact"
+            className="rounded-md bg-brand px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-brand-dark"
+          >
+            お問い合わせ
+          </a>
         </nav>
 
-        <MobileNav links={navLinks} />
+        <MobileNav links={[...navLinks, { href: "/#contact", label: "お問い合わせ" }]} />
       </div>
     </header>
   );

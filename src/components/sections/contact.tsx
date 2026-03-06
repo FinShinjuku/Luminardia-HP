@@ -1,18 +1,9 @@
 "use client";
 
-import { useIntersection } from "@/hooks/use-intersection";
-
 export function Contact() {
-  const { ref, isVisible } = useIntersection();
-
   return (
     <section id="contact" className="py-20 md:py-28">
-      <div
-        ref={ref}
-        className={`mx-auto max-w-2xl px-6 transition-all duration-500 ${
-          isVisible ? "animate-fade-in-up" : "opacity-0"
-        }`}
-      >
+      <div className="mx-auto max-w-2xl px-6">
         <h2 className="font-heading text-2xl font-bold text-text-primary md:text-3xl">
           Contact
         </h2>
