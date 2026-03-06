@@ -49,10 +49,6 @@ export default function RootLayout({
     "@type": "Organization",
     name: "Luminardia.inc",
     foundingDate: "2026-03",
-    founder: {
-      "@type": "Person",
-      name: "神原 一晃",
-    },
     address: {
       "@type": "PostalAddress",
       postalCode: "160-0023",

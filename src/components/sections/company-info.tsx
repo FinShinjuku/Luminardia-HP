@@ -1,6 +1,5 @@
 const companyData = [
   { label: "会社名", value: "Luminardia.inc" },
-  { label: "代表者", value: "神原 一晃" },
   { label: "設立", value: "2026年3月" },
   {
     label: "所在地",
