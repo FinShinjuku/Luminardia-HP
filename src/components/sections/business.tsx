@@ -73,7 +73,7 @@ export function Business() {
             ) : (
               <article
                 key={service.title}
-                className="rounded-lg border border-border bg-white p-8 transition-shadow hover:shadow-md"
+                className="rounded-lg border border-border bg-white p-8"
               >
                 {content}
               </article>

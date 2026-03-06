@@ -29,7 +29,11 @@ export function MobileNav({ links }: MobileNavProps) {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="border-b border-border py-3 text-sm font-medium text-text-secondary transition-colors hover:text-brand"
+                className={`border-b border-border py-3 text-sm font-medium transition-colors ${
+                    link.href === "/#contact"
+                      ? "font-semibold text-brand"
+                      : "text-text-secondary hover:text-brand"
+                  }`}
               >
                 {link.label}
               </a>

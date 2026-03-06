@@ -23,18 +23,12 @@ export function Hero() {
           <br />
           IT戦略コンサルティング・AI開発・農業DXの会社です。
         </p>
-        <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        <div className="mt-8">
           <a
             href="#business"
             className="text-sm font-medium text-text-primary underline underline-offset-4 transition-colors hover:text-brand"
           >
-            中小企業の方へ &rarr;
-          </a>
-          <a
-            href="#about"
-            className="text-sm font-medium text-text-primary underline underline-offset-4 transition-colors hover:text-brand"
-          >
-            大企業・パートナーの方へ &rarr;
+            事業内容を見る &rarr;
           </a>
         </div>
       </div>

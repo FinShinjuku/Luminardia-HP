@@ -7,11 +7,6 @@ export function About() {
         </h2>
         <div className="mt-2 h-1 w-12 bg-brand" />
 
-        <p className="mt-8 text-base leading-relaxed text-text-secondary md:text-lg">
-          Luminardia.incは、テクノロジーの力で社会課題を解決し、
-          新たなビジネス価値を創造する企業です。
-        </p>
-
         <div className="mt-8">
           <h3 className="text-sm font-semibold uppercase tracking-wide text-text-muted">
             代表の実績
