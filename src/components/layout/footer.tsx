@@ -11,7 +11,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-8">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="font-heading text-lg font-semibold text-text-primary">
-            Luminardia.inc
+            Luminordia.Inc
           </p>
           <nav className="flex items-center gap-6" aria-label="フッターナビゲーション">
             {footerLinks.map((link) => (
@@ -32,7 +32,7 @@ export function Footer() {
         </div>
         <div className="mt-6 text-center">
           <p className="text-xs text-text-muted">
-            &copy; {new Date().getFullYear()} Luminardia.inc All rights reserved.
+            &copy; {new Date().getFullYear()} Luminordia.Inc All rights reserved.
           </p>
         </div>
       </div>
