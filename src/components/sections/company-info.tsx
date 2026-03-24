@@ -1,5 +1,9 @@
+"use client";
+
+import { useIntersection } from "@/hooks/use-intersection";
+
 const companyData = [
-  { label: "会社名", value: "Luminardia.inc" },
+  { label: "会社名", value: "Luminordia.Inc" },
   { label: "設立", value: "2026年3月" },
   {
     label: "所在地",
@@ -9,18 +13,19 @@ const companyData = [
     label: "事業内容",
     value: "IT戦略コンサルティング / AIによるシステム開発 / アグリテック",
   },
-  { label: "従業員数", value: "1名" },
-  {
-    label: "連絡先",
-    value: "k.kanbara@luminordia.com",
-    isEmail: true,
-  },
 ];
 
 export function CompanyInfo() {
+  const { ref, isVisible } = useIntersection();
+
   return (
     <section id="company" className="bg-bg-secondary py-20 md:py-28">
-      <div className="mx-auto max-w-3xl px-6">
+      <div
+        ref={ref}
+        className={`mx-auto max-w-3xl px-6 transition-all duration-500 ${
+          isVisible ? "animate-fade-in-up" : "opacity-0"
+        }`}
+      >
         <h2 className="font-heading text-2xl font-bold text-text-primary md:text-3xl">
           Company
         </h2>

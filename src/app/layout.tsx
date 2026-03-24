@@ -17,22 +17,14 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Luminardia.inc | IT戦略・AI開発・農業DX",
+  title: "Luminardia.inc | テクノロジーで、未来を切り拓く",
   description:
-    "金融基幹システムとAWSクラウドの経験を持つIT戦略コンサルティング・AI開発・農業DX企業。中小企業のDX推進から大企業のシステム刷新まで、戦略立案から実装までを一貫支援します。",
-  keywords: [
-    "IT戦略コンサルティング",
-    "AI開発",
-    "農業DX",
-    "DX推進",
-    "システム開発",
-    "アグリテック",
-    "Luminardia",
-  ],
+    "Luminardia.incは、IT戦略コンサルティング、AIによるシステム開発、アグリテック事業を通じて、テクノロジーで未来を切り拓く企業です。",
+  keywords: ["Luminardia", "IT戦略", "AIシステム開発", "アグリテック", "コンサルティング"],
   openGraph: {
-    title: "Luminardia.inc | IT戦略・AI開発・農業DX",
+    title: "Luminardia.inc | テクノロジーで、未来を切り拓く",
     description:
-      "金融基幹システムとAWSクラウドの経験を活かし、IT戦略コンサルティング・AI開発・農業DXを展開。",
+      "IT戦略コンサルティング、AIによるシステム開発、アグリテック事業を展開。",
     type: "website",
     locale: "ja_JP",
     siteName: "Luminardia.inc",
@@ -57,39 +49,8 @@ export default function RootLayout({
       streetAddress: "西新宿3丁目3番13号西新宿水間ビル2F",
       addressCountry: "JP",
     },
-    memberOf: {
-      "@type": "Organization",
-      name: "特定非営利活動法人 金融IT協会（FITA）",
-    },
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "サービス一覧",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "IT戦略コンサルティング",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "AIによるシステム開発",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "アグリテック",
-          },
-        },
-      ],
-    },
     description:
-      "金融基幹システムとAWSクラウドの経験を活かし、IT戦略コンサルティング・AI開発・農業DXを展開する企業です。",
+      "IT戦略コンサルティング、AIによるシステム開発、アグリテック事業を展開する企業です。",
   };
 
   return (
