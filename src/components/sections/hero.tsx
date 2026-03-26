@@ -11,8 +11,8 @@ export function Hero() {
     >
       <div className="animate-fade-in-up text-center">
         <Image
-          src="/logo.jpg"
-          alt="Luminardia.inc"
+          src="/luminardia-logo.png"
+          alt="Luminordia.Inc"
           width={400}
           height={150}
           priority
